@@ -1,0 +1,26 @@
+
+
+description = 'Spring Boot Reservation REST Service'
+
+apply plugin: 'application'
+apply plugin: 'org.springframework.boot'
+
+mainClassName = 'org.letuslearn.rss.ReservationApp'
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
+dependencies {
+    compile project(':reservation-core')
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+
+    compile 'org.springframework.boot:spring-boot-starter-web:'
+
+}
+
+jar {
+    baseName = 'reservation-system'
+}
+
