@@ -16,7 +16,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'reservation_system'
-include 'reservation-core'
-include 'reservation-rs'
-include 'reservation-schema'
+rootProject.name = 'reservation-rs'

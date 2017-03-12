@@ -1,0 +1,10 @@
+
+
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+}
